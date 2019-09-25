@@ -1,23 +1,71 @@
 body {
-  width: 100%;
-  max-width: 1300px;
-  max-height: 688px;
-  background-color: #f6f2f2;
-  margin: 50px 165px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  line-height: 1.6px;
 }
 
 html {
-  color: white;
   box-sizing: border-box;
 }
+
 *,
 *:after,
 *::before {
-  box-sizing: inherit; /* box setting */
+  box-sizing: inherit;
+  /* box setting */
 }
 
-.header {
+.container {
+  background: #f6f2f2;
+  width: 100%;
+  max-width: 1300px;
+  /* height: 700px; */
+  padding: 30px 165px;
+  display: block;
 }
+
+.nav_menu {
+  background: #313030;
+}
+
+.navigation {
+  width: 970px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0px;
+  padding: 30px;
+ text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* remove underscore */
+  transition: color 0.2s linear;
+  /* time to change color */
+}
+
+/*change color for nav_link */
+.nav_link:hover {
+  background: #eb6262;
+  color: black;
+}
+
+/*change color for nav_link */
+.nav_link:active {
+  background: #ff2d2d;
+}
+
+
+
+
+
 
 /* container settings */
 /* .container {
@@ -34,16 +82,16 @@ html {
   border: 1px solid blue;
 } */
 
-.intro {
+/* .intro {
   width: 100%;
   height: auto;
   position: absolute;
   border: 2px solid red;
   background: #f6f2f2 center;
-}
+} */
 
 /* header settings */
-.menu {
+/* .menu {
   margin: 29px 0px 0px 0px;
   width: 1300px;
   height: 90px;
@@ -53,34 +101,34 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.nav {
-  font-size: 17px;
-  text-transform: uppercase; /* capital letters */
-  display: flex;
-  /* flexbox features */
-  /* justify-content: center;
+/* .nav {
+  font-size: 17px; */
+/* text-transform: uppercase; capital letters */
+/* display: flex; */
+/* flexbox features */
+/* justify-content: center;
   align-items: center; */
 }
 
-.navLink {
+/* .navLink {
   display: flex;
   width: ;
   margin: 0 47px;
   letter-spacing: 0.49px;
   color: white;
   text-decoration: none; /*remove underscore */
-  transition: color 0.3s linear; /* time to change color */
+/* transition: color 0.3s linear; time to change color */
 }
 
 /*change color for navLink */
-.navLink:hover {
+/* .navLink:hover {
   color: #0d4d25;
-}
+} */
 
 /*settings for Title*/
-.greeting_Title {
+/* .greeting_Title {
   font-size: 33px;
   font-weight: 700;
   line-height: 60px;
@@ -92,26 +140,26 @@ html {
   padding-top: 220px;
   margin-right: 827px;
   border: 1px red solid;
-}
+} */
 
-.paragraph {
+/* .paragraph {
   padding: 36px 75px 58px 0px;
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
   text-transform: none; /*choice registr*/
-  letter-spacing: normal; /*distance between letter*/
+/* letter-spacing: normal; distance between letter */
 }
 
 /*set margin for heading*/
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
-}
+} */
 
 /*style for button*/
 .button {
@@ -134,6 +182,7 @@ h6 {
   background: #eb6262;
   color: black;
 }
+
 .button:active {
   background: #ff2d2d;
 }
