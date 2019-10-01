@@ -11,13 +11,13 @@ html {
 *,
 *:after,
 *::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   /* box setting */
 }
 
 .container {
   background: #f6f2f2;
-  /* width: 100%; */
+  width: 100%;
   max-width: 1579px;
   height: 688px;
   padding: 30px 165px;
@@ -67,16 +67,17 @@ html {
 
 .organaisation {
   margin-top: 108px;
-  width: 520px;
-  height: 150px;
-  display: inline-block;
-
-  /* border: 1px solid red; */
+  width: 1249px;
+  height: auto;
+  display: flex;
 }
 
 .title {
   float: left;
+  width: 588px;
+  height: 117px;
   margin: 0 auto;
+  margin-right: 112px;
   font-size: 60px;
   font-weight: 700;
   line-height: 72px;
@@ -85,21 +86,21 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+.title_video{
+  background-color: #c4c0b1;
+  float: left;
+  width: 549px;
+  height: 356px;
   box-shadow: 0 0 70px rgb(141, 141, 141);
 }
 
-.org_text {
-  margin-top: 36px;
+.paragraph {
+  margin-top: 153px;
   width: 500px;
   position: absolute;
   height: 73px;
-  /* border: 1px solid red; */
-}
-
-
-.paragraph {
   /* padding: 36px 75px 58px 0px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
@@ -110,20 +111,9 @@ html {
   /* letter-spacing: normal; distance between letter */
 }
 
-/*set margin for heading*/
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-} */
-
 /*style for button*/
-
 .button_location {
-  margin-top: 58px;
+  margin-top: 300gitpx;
   width: 227px;
   height: 55px;
 }
@@ -152,6 +142,7 @@ h6 {
 }
 
 .block{
+  float: left;
   width: 300px;
   height: 300px;
   border: 1px solid red;
