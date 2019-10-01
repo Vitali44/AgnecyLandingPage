@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333333;
   line-height: 1.6px;
 }
@@ -17,19 +17,22 @@ html {
 
 .container {
   background: #f6f2f2;
-  width: 100%;
-  max-width: 1300px;
-  /* height: 700px; */
+  /* width: 100%; */
+  max-width: 1579px;
+  height: 688px;
   padding: 30px 165px;
   display: block;
+  align-items: flex-start;
 }
 
 .nav_menu {
   background: #313030;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .navigation {
-  width: 970px;
+  width: 100%;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -47,7 +50,7 @@ html {
   text-decoration: none;
   /* remove underscore */
   text-transform: uppercase;
-  transition: .2s linear;
+  transition: 0.2s linear;
   /* time to change color */
 }
 
@@ -64,35 +67,47 @@ html {
 
 .organaisation {
   margin-top: 108px;
-  width: 50%;
+  width: 520px;
   height: 150px;
-  border: 1px solid red;
+  display: inline-block;
+
+  /* border: 1px solid red; */
 }
 
 .title {
+  float: left;
   margin: 0 auto;
   font-size: 60px;
   font-weight: 700;
   line-height: 72px;
+  letter-spacing: 6px;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.org_text{
+  box-shadow: 0 0 70px rgb(141, 141, 141);
+}
+
+.org_text {
   margin-top: 36px;
-  width: 40%;
+  width: 500px;
+  position: absolute;
   height: 73px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
-/* .paragraph {
-  padding: 36px 75px 58px 0px;
-  font-size: 20px;
+.paragraph {
+  /* padding: 36px 75px 58px 0px; */
+  margin: 0 auto;
+  font-size: 16px;
   font-weight: 400;
+  opacity: 0.7;
   line-height: 25px;
   text-transform: none; /*choice registr*/
-/* letter-spacing: normal; distance between letter */
+  font-weight: 400;
+  line-height: 28px;
+  /* letter-spacing: normal; distance between letter */
 }
 
 /*set margin for heading*/
@@ -106,15 +121,20 @@ h6 {
 } */
 
 /*style for button*/
+
+.button_location {
+  margin-top: 58px;
+  width: 227px;
+  height: 55px;
+}
+
 .button {
   border-radius: 10px;
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   background: #ff2d2d;
   text-decoration: none;
   text-transform: capitalize;
-  width: 227px;
-  height: 55px;
   display: block;
   text-align: center;
   line-height: 50px;
@@ -130,3 +150,10 @@ h6 {
 .button:active {
   background: #ff2d2d;
 }
+
+.block{
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
