@@ -151,16 +151,15 @@ html {
   height: 692px;
   max-width: 1579px;
   padding: 30px 165px;
-  /* display: flex; */
-  /* align-items: flex-start; */
   display: inline-flex;
   align-items: flex-start;
   border: 1px solid blue;
 }
 
-.service_staff{
+/* Settings for title, paragraph and button */
+.service_staff {
   border: 1px dotted red;
-  width: 50%;
+  width: 45%;
   float: left;
 }
 
@@ -178,7 +177,6 @@ html {
 
 .service_paragraph {
   width: 500px;
-  /* position: absolute; */
   height: 98px;
   font-size: 16px;
   font-weight: 400;
@@ -195,6 +193,7 @@ html {
   height: 55px;
 }
 
+/* Button settings */
 .service_button {
   border-radius: 10px;
   font-size: 18px;
@@ -221,19 +220,32 @@ html {
 
 .offers_items {
   float: left;
-  width: 50%;
+  width: 55%;
   min-height: 500px;
   border: 1px solid green;
 }
 
-.item{
-  width: 45%;
+.item {
+  float: left;
+  margin: 20px 10px 20px 10px;
+  width: 47%;
   height: 200px;
   border: 1px solid red;
   padding: 5px;
-
 }
 
-.item_title{
+.item_title {
+  padding-top: 30px;
+  padding-bottom: 17px;
+  font-size: 24px;
+}
 
+.item_paragraph {
+  width: 300px;
+  height: 101px;
+  opacity: 0.7;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
 }
