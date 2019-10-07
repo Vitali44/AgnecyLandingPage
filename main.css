@@ -18,7 +18,7 @@ html {
 .container {
   background: #f6f2f2;
   width: 100%;
-  max-width: 1579px;
+  min-width: 1579px; /* min or max */
   min-height: 688px;
   padding: 30px 165px;
   display: block;
@@ -153,12 +153,21 @@ html {
   padding: 30px 165px;
   display: inline-flex;
   align-items: flex-start;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+
+.service::after{
+  content: "";
+  display: block;
+  width: 1250px;
+  height: 4px;
+  margin: 10px 165px;
+  background-color: #ececec;
 }
 
 /* Settings for title, paragraph and button */
 .service_staff {
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
   width: 45%;
   float: left;
 }
@@ -199,7 +208,7 @@ html {
   font-size: 18px;
   color: red;
   background: white;
-  border: 1px solid red;
+  border: 2px solid red;
   text-decoration: none;
   text-transform: capitalize;
   display: block;
@@ -222,7 +231,7 @@ html {
   float: left;
   width: 55%;
   min-height: 500px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .item {
@@ -230,7 +239,7 @@ html {
   margin: 20px 10px 20px 10px;
   width: 47%;
   height: 200px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 5px;
 }
 
