@@ -1,116 +1,150 @@
 body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif; /* add font to style */
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  line-height: 1.6px;
+}
 
-  font-size: 15px;
-  line-height: 1.6; /* set line interval */
-  color: #333; /* font color for body */
+html {
+  box-sizing: border-box;
 }
 
 *,
-*::before,
-*:after {
-  box-sizing: border-box; /* box setting */
+*:after,
+*::before {
+  box-sizing: border-box;
+  /* box setting */
 }
 
-/* container settings */
 .container {
+  background: #f6f2f2;
   width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.intro {
-  width: 100%;
-  height: 100vh; /* 100% screen height */
-  background: #f6f2f2 center;
-}
-
-/*settings for Title*/
-.introTitle {
-  font-size: 60px;
-  padding-top: 202px;
-  font-weight: 400;
-  line-height: 72px;
-  text-transform: uppercase;
-  color: #000000;
-  /* width: 588px;
-  height: 117px; */
-  /* Text style for "o, ur stro" */
-  letter-spacing: 1.5px;
-  /* Text style for "organaisat" */
-  letter-spacing: 6px;
-  padding-top: 220px;
-  margin-left: 164px;
-  margin-right: 827px;
-}
-
-.paragraph {
-  padding: 36px 75px 58px 0px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 25px;
-  text-transform: none; /*choice registr*/
-  letter-spacing: normal; /*distance between letter*/
-}
-
-/*style for button*/
-.button {
-  border: 1px solid #ff2d2d;
-  border-radius: 10px;
-  font-size: 22px;
-  color: white;
-  background: #ff2d2d;
-  text-decoration: none;
-  text-transform: capitalize;
-  width: 227px;
-  height: 55px;
+  max-width: 1579px;
+  height: 688px;
+  padding: 30px 165px;
   display: block;
-  text-align: center;
-  line-height: 50px;
+  align-items: flex-start;
 }
 
-/*set margin for heading*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.nav_menu {
+  background: #313030;
+  /* justify-content: center;
+  align-items: center; */
 }
 
-/* header settings */
-.header {
-  margin: 29px 166px 103px 164px;
-  padding-top: 43px;
-  width: 1300px;
-  height: 89px;
-  background-color: #000000;
-  opacity: 0.8;
-  position: absolute;
-}
-
-.nav {
-  font-size: 14px;
-  text-transform: uppercase; /* capital letters */
+.navigation {
+  width: 100%;
+  height: 90px;
   display: flex;
-  /* flexbox features */
   justify-content: center;
   align-items: center;
 }
 
-.navLink {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 47px;
+.nav_link {
+  height: 100%;
+  display: flex;
+  align-items: center;
   color: white;
-  text-decoration: none; /*remove underscore */
-  transition: color 0.3s linear; /* time to change color */
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  /* remove underscore */
+  text-transform: uppercase;
+  transition: 0.2s linear;
+  /* time to change color */
 }
 
-/*change color for navLink */
-.navLink:hover {
-  color: #0d4d25;
+/*change color for nav_link */
+.nav_link:hover {
+  background: #ff3f40;
+  color: black;
+}
+
+/*change color for nav_link */
+.nav_link:active {
+  background: #ff2d2d;
+}
+
+.organaisation {
+  margin-top: 108px;
+  width: 1249px;
+  height: auto;
+  display: flex;
+}
+
+.title {
+  float: left;
+  width: 588px;
+  height: 117px;
+  margin: 0 auto;
+  margin-right: 112px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title_video{
+  background-color: #c4c0b1;
+  float: left;
+  width: 549px;
+  height: 356px;
+  box-shadow: 0 0 70px rgb(141, 141, 141);
+}
+
+.paragraph {
+  margin-top: 153px;
+  width: 500px;
+  position: absolute;
+  height: 73px;
+  /* padding: 36px 75px 58px 0px; */
+  /* margin: 0 auto; */
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  line-height: 25px;
+  text-transform: none; /*choice registr*/
+  font-weight: 400;
+  line-height: 28px;
+  /* letter-spacing: normal; distance between letter */
+}
+
+/*style for button*/
+.button_location {
+  margin-top: 300px;
+  width: 227px;
+  height: 55px;
+}
+
+.button {
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+  background: #ff2d2d;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+/*effects for button*/
+.button:hover {
+  background: #eb6262;
+  color: black;
+}
+
+.button:active {
+  background: #ff2d2d;
+}
+
+.block{
+  float: left;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
 }
 
