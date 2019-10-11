@@ -495,11 +495,30 @@ html {
   color: red;
 }
 
-.other_employees{
+.other_employees {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.other_persons{
+.photo_name {
+  position: relative;
+}
+
+.staff_name {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px auto;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 25%;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.staff_name:hover {
+  visibility: visible;
+  opacity: 1;
 }
