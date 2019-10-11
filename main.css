@@ -341,14 +341,10 @@ html {
 
 /*change color for nav_link */
 .feature_link:hover {
-  /* background: #ff3f40; */
   color: red;
 }
 
 .feature_blocks {
-  /* position: relative; */
-  /* display: flex;
-  flex-flow: row; */
   width: 1249px;
   height: 601px;
 }
@@ -390,7 +386,6 @@ html {
   padding: 60px 165px;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .team_text {
@@ -505,20 +500,28 @@ html {
   position: relative;
 }
 
-.staff_name {
+.staff_name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
   position: absolute;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 20px auto;
   text-transform: uppercase;
   bottom: 0;
-  left: 25%;
-  /* visibility: hidden; */
+  width: 100%;
+  height: 20%;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #7a786e;
+  color: white;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity .2s, visibility .2s;
+  transition: .5s linear;
+
 }
 
-.staff_name:hover {
+.photo_name:hover .staff_name{
   visibility: visible;
   opacity: 1;
 }
