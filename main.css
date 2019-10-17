@@ -1,11 +1,10 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #333333;
-  line-height: 1.6px;
 }
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* install all  contente on center */
   display: flex;
   justify-content: center;
@@ -87,7 +86,6 @@ html {
   margin-right: 112px;
   font-size: 60px;
   font-weight: 700;
-  line-height: 72px;
   letter-spacing: 6px;
   text-transform: uppercase;
 }
@@ -100,10 +98,8 @@ html {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
-  line-height: 25px;
   text-transform: none; /* choice registr */
   font-weight: 400;
-  line-height: 28px;
 }
 
 /*style for button*/
@@ -122,7 +118,6 @@ html {
   text-transform: capitalize;
   display: block;
   text-align: center;
-  line-height: 50px;
   letter-spacing: 2px;
   transition: 0.5s linear;
 }
@@ -148,7 +143,6 @@ html {
 .service {
   font-family: "Open Sans", sans-serif;
   color: #333333;
-  line-height: 1.6px;
 }
 
 .service_container {
@@ -159,7 +153,6 @@ html {
   padding: 60px 165px;
   display: inline-flex;
   align-items: flex-start;
-  /* border: 1px solid blue; */
 }
 
 /* Separation line */
@@ -174,7 +167,6 @@ html {
 
 /* Settings for title, paragraph and button */
 .service_staff {
-  /* border: 1px dotted red; */
   width: 45%;
   float: left;
 }
@@ -185,7 +177,6 @@ html {
   font-size: 42px;
   opacity: 0.8;
   font-weight: 700;
-  line-height: 55px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -197,10 +188,8 @@ html {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
-  line-height: 25px;
   text-transform: none; /* choice registr */
   font-weight: 400;
-  line-height: 28px;
 }
 
 .service_button_location {
@@ -220,7 +209,6 @@ html {
   text-transform: capitalize;
   display: block;
   text-align: center;
-  line-height: 50px;
   letter-spacing: 2px;
   transition: 0.5s linear;
 }
@@ -238,7 +226,6 @@ html {
   float: left;
   width: 55%;
   min-height: 500px;
-  /* border: 1px solid green; */
 }
 
 .item {
@@ -246,7 +233,6 @@ html {
   margin: 20px 10px 50px 10px;
   width: 47%;
   height: 200px;
-  /* border: 1px solid red; */
   padding: 5px;
 }
 
@@ -263,14 +249,12 @@ html {
   color: #000000;
   font-size: 16px;
   font-weight: 400;
-  line-height: 25px;
 }
 
 /* Features */
 .feature {
   font-family: "Open Sans", sans-serif;
   color: #333333;
-  line-height: 1.6px;
 }
 
 .feature_container {
@@ -312,7 +296,6 @@ html {
   margin-top: 0px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
 }
 
 /* Feature menu styles */
@@ -363,8 +346,6 @@ html {
 }
 
 .feature_rectangle {
-  /* position: absolute; */
-  /* float: left; */
   width: 298px;
   height: 291px;
   background-color: #f5f0dd;
@@ -374,7 +355,6 @@ html {
 .team {
   font-family: "Open Sans", sans-serif;
   color: #333333;
-  line-height: 1.6px;
 }
 
 .team_container {
@@ -391,7 +371,6 @@ html {
 .team_text {
   width: 457px;
   height: 181px;
-  /* border: 1px solid purple; */
 }
 
 .team_title {
@@ -413,7 +392,6 @@ html {
   color: #000000;
   font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
 }
 
 .team_text::after {
@@ -462,7 +440,6 @@ html {
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
 }
 
 /* Feature menu styles */
@@ -479,14 +456,12 @@ html {
   color: #000000;
   font-size: 18px;
   font-style: italic;
-  line-height: 24px;
   text-decoration: none;
   text-transform: capitalize;
   margin-right: 30px;
 }
 
 .contact_link:hover {
-  /* background: #ff3f40; */
   color: red;
 }
 
@@ -528,13 +503,10 @@ html {
 .subscribe_container {
   font-family: "Open Sans", sans-serif;
   color: #333333;
-  line-height: 1.6px;
   background: #f5f0dd;
   width: 100%;
-  height: 512px;
   max-width: 1579px;
   padding: 60px 165px;
-  /* display: flex; */
 }
 
 .subscribe_text {
@@ -543,8 +515,6 @@ html {
   width: 100%;
   height: 91px;
   margin-bottom: 62px;
-  /* justify-items: center; */
-  /* align-items: center; */
 }
 
 .subscribe_title {
@@ -553,7 +523,6 @@ html {
   color: #ffffff;
   margin-top: 140px;
   font-weight: 700;
-  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.38px;
 }
@@ -564,7 +533,6 @@ html {
   margin-top: 31px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
 }
 
 .subscribe_form {
@@ -580,9 +548,10 @@ html {
   padding: 30px;
   margin-right: 22px;
   border-radius: 5px;
+  border: none;
 }
 
-.subscribe_button{
+.subscribe_button {
   width: 214px;
   height: 79px;
   color: #ffffff;
@@ -590,6 +559,175 @@ html {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 34px;
   border-radius: 10px;
+  margin-bottom: 100px;
+  border: none;
+}
+
+/* Feedback */
+.feedback {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  position: relative;
+}
+
+.feedback_container {
+  background: white;
+  width: 100%;
+  position: relative;
+  height: auto;
+  max-width: 1579px;
+  padding: 60px 165px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.feedback_text {
+  width: 722px;
+  height: 213px;
+}
+
+.feedback_title {
+  width: 341px;
+  height: 32px;
+  opacity: 0.8;
+  color: #000000;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* Text style for "Meet our t" */
+  letter-spacing: 0.38px;
+}
+
+.feedback_paragraph {
+  height: 73px;
+  opacity: 0.7;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.feedback_paragraph::after {
+  content: "";
+  display: flex;
+  width: 132px;
+  height: 3px;
+  background-color: #ff2d2d;
+  margin-top: 54px;
+}
+
+.feedback_message {
+  width: 732px;
+  height: 481px;
+  margin-top: 70px;
+}
+
+.message_form {
+  display: block;
+}
+
+.your_name {
+  width: 339px;
+  height: 69px;
+  margin-right: 52px;
+  float: left;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 51px;
+}
+
+.email {
+  width: 339px;
+  height: 69px;
+  float: left;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 51px;
+}
+
+.message {
+  margin-top: 46px;
+  width: 730px;
+  height: 249px;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 51px;
+}
+
+.message_button {
+  width: 731px;
+  height: 72px;
+  margin-top: 45px;
+  color: #ffffff;
+  background-color: #ff2d2d;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  border: none;
+}
+
+.feedback_contact {
+  width: 577px;
+  height: 481px;
+  background-color: #2d2d2d;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 79px;
+}
+
+.cnt_title {
+  width: 138px;
+  height: 14px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.cnt_address {
+  width: 285px;
+  height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.cnt_email {
+  width: 285px;
+  height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.cnt_phonenumber {
+  width: 285px;
+  height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.footer{
+  
 }
