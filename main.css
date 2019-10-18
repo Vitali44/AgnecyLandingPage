@@ -67,7 +67,7 @@ html {
 
 .organaisation {
   margin-top: 108px;
-  width: 1249px;
+  max-width: 1249px;
   height: auto;
   display: flex;
 }
@@ -329,8 +329,14 @@ html {
 }
 
 .feature_blocks {
-  width: 1249px;
-  height: 601px;
+  max-width: 1249px;
+  min-height: 601px;
+}
+
+@media screen and (max-width: 920px){
+  .feature_blocks{
+    max-width: 720px;
+  }
 }
 
 .top_line {
@@ -474,19 +480,18 @@ html {
 
 .photo_name {
   position: relative;
+  max-height: 214px;
 }
 
 .staff_name {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 20%;
   position: absolute;
   text-transform: uppercase;
   bottom: 0;
-  width: 100%;
-  height: 20%;
   font-size: 18px;
   font-weight: 400;
   background-color: #7a786e;
