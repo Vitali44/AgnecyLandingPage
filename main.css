@@ -1,7 +1,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #333333;
-  /* margin: 8px; */
+  box-sizing: content-box;
+  margin: 0px;
 }
 
 html {
@@ -20,31 +21,40 @@ html {
 
 .container {
   background: #f6f2f2;
-  min-width: 10px; /* min or max */
+  /* min-width: 10px; min or max */
   min-height: 688px;
   padding: 30px 165px;
 }
 
+
+
 .nav_menu {
   background: #313030;
-  /* justify-content: center;
-  align-items: center; */
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .navigation {
-  width: 1249px;
-  height: 90px;
+  max-width: 100%;
+  min-height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    width: 100%;
+  }
 }
 
 .nav_link {
-  height: 100%;
+  /* width: 70em; */
+  height: 90px;
   display: flex;
   align-items: center;
   color: white;
-  margin: 0px;
   padding: 30px;
   text-align: center;
   text-decoration: none;
@@ -503,7 +513,7 @@ html {
 
 .photo_name:hover .staff_name {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .subscribe_container {
