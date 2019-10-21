@@ -43,12 +43,6 @@ html {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) {
-  .navigation {
-    width: 100%;
-  }
-}
-
 .nav_link {
   /* width: 70em; */
   height: 90px;
