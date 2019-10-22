@@ -26,20 +26,13 @@ html {
   padding: 30px 165px;
 }
 
-
-
-.nav_menu {
-  background: #313030;
-  /* justify-content: center; */
-  align-items: center;
-}
-
 .navigation {
-  max-width: 100%;
-  min-height: 90px;
+  /* max-width: 100%;
+  min-height: 90px; */
+  background: #313030;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-sizing: border-box;
 }
 
@@ -50,7 +43,6 @@ html {
   align-items: center;
   color: white;
   padding: 30px;
-  text-align: center;
   text-decoration: none;
   /* remove underscore */
   text-transform: uppercase;

@@ -1,0 +1,24 @@
+/* Monitors */
+@media screen and (max-width: 992px) {
+  .body {
+
+  }
+
+  .container {
+    background: #030546;
+    /* width: 600px; */
+    flex-direction: column;
+    /* display: flex; */
+    justify-content: center;
+    position: relative;
+  }
+
+  .navigation {
+    position: absolute;
+    background: purple;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+
+}
