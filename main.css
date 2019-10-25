@@ -3,10 +3,11 @@ body {
   color: #333333;
   box-sizing: content-box;
   margin: 0px;
+  margin-right: -2px;
 }
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* install all  contente on center */
   display: flex;
   justify-content: center;
@@ -75,7 +76,7 @@ html {
 .title {
   float: left;
   width: 588px;
-  height: 117px;
+  /* height: 117px; */
   margin: 0 auto;
   margin-right: 112px;
   font-size: 60px;
@@ -85,22 +86,20 @@ html {
 }
 
 .paragraph {
-  margin-top: 153px;
   width: 512px;
-  position: absolute;
-  height: 73px;
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
-  text-transform: none; /* choice registr */
+  text-transform: none;
+  /* choice registr */
   font-weight: 400;
 }
 
 /*style for button*/
 .button_location {
-  margin-top: 300px;
-  width: 227px;
-  height: 55px;
+  margin-top: 50px;
+  /* width: 227px; */
+  /* height: 55px; */
 }
 
 .button {
@@ -110,12 +109,13 @@ html {
   background: #ff2d2d;
   text-decoration: none;
   text-transform: capitalize;
-  display: block;
+  /* display: block; */
   text-align: center;
+  padding: 20px 63px; 
   letter-spacing: 2px;
   line-height: 50px;
   transition: 0.5s linear;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
 }
 
 /*effects for button*/
@@ -129,10 +129,11 @@ html {
 }
 
 .title_video {
-  background-color: #c4c0b1;
-  float: left;
-  width: 549px;
-  height: 356px;
+  width: 100%; 
+}
+
+.video{
+  width: 100%;
   box-shadow: 0 0 70px rgb(141, 141, 141);
 }
 
@@ -184,7 +185,8 @@ html {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
-  text-transform: none; /* choice registr */
+  text-transform: none;
+  /* choice registr */
   font-weight: 400;
 }
 
@@ -329,8 +331,8 @@ html {
   min-height: 601px;
 }
 
-@media screen and (max-width: 920px){
-  .feature_blocks{
+@media screen and (max-width: 920px) {
+  .feature_blocks {
     max-width: 720px;
   }
 }
@@ -507,7 +509,7 @@ html {
   color: #333333;
   background: #f5f0dd;
   width: 100%;
-  max-width: 1579px;
+  /* max-width: 1579px; */
   padding: 60px 165px;
 }
 
@@ -680,8 +682,8 @@ html {
 }
 
 .feedback_contact {
-  width: 577px;
-  height: 481px;
+  max-width: 577px;
+  max-height: 481px;
   background-color: #2d2d2d;
   position: absolute;
   right: 0;
@@ -729,25 +731,27 @@ html {
   padding-top: 20px;
 }
 
-.footer{
-  width: 100%;
-  height: 111px;
+.footer {
+  /* width: 100%; */
+  min-height: 111px;
   background-color: #313030;
   color: #b8b8b8;
   font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 165px  ;
+  margin-left: -3px;
+  margin-right: -4px;
+  padding: 0 165px;
+  /* box-sizing: content-box; */
 }
 
-.copyright{
+.copyright {
   align-content: inherit;
 }
 
-.social_networks{
+.social_networks {
   display: flex;
   width: 185px;
   height: 33px;

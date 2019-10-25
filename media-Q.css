@@ -1,24 +1,67 @@
 /* Monitors */
-@media screen and (max-width: 992px) {
-  .body {
+@media screen and (max-width: 768px) {
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .body {
   }
 
   .container {
-    background: #030546;
-    /* width: 600px; */
-    flex-direction: column;
-    /* display: flex; */
-    justify-content: center;
-    position: relative;
+    max-width: 100%;
+    padding: 3% 5%;
   }
 
   .navigation {
-    position: absolute;
-    background: purple;
-    width: 50%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav_link {
+    height: 25%;
+    padding: 2%;
+    font-size: 14px;
+  }
+
+  .organaisation {
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .title{
+    font-size: 4vh;
+    float: inherit;
+    width: 90%;
+  }
+
+  .paragraph {
+    font-size: 1.8vh;
+    width: 90%;
+  }
+
+  .button_location {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button{
+    padding: 3vw 5vh;
+    line-height: 0;
+  }
+  
+  .title_video{
+    width: 65%;
     margin: 0 auto;
+    justify-content: center;
   }
 
 
-}
+
+
+  }
