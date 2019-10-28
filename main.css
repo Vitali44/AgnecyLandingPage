@@ -531,7 +531,6 @@ html {
 }
 
 .subscribe_form {
-  padding: auto;
   display: flex;
   justify-content: center;
 }
