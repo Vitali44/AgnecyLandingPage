@@ -98,8 +98,8 @@ html {
 /*style for button*/
 .button_location {
   margin-top: 50px;
-  /* width: 227px; */
-  /* height: 55px; */
+  width: 227px;
+  height: 55px;
 }
 
 .button {
@@ -109,9 +109,8 @@ html {
   background: #ff2d2d;
   text-decoration: none;
   text-transform: capitalize;
-  /* display: block; */
+  display: block;
   text-align: center;
-  padding: 20px 63px; 
   letter-spacing: 2px;
   line-height: 50px;
   transition: 0.5s linear;
@@ -140,6 +139,7 @@ html {
 .service {
   font-family: "Open Sans", sans-serif;
   color: #333333;
+  width: 100%;
 }
 
 .service_container {
@@ -155,10 +155,10 @@ html {
 /* Separation line */
 .service::after {
   content: "";
-  display: block;
-  width: 1250px;
+  display: flex;
+  min-width: 1200px;
   height: 4px;
-  margin: 50px 165px 0;
+  margin: 50px 165px;
   background-color: #ececec;
 }
 
@@ -331,12 +331,6 @@ html {
   min-height: 601px;
 }
 
-@media screen and (max-width: 920px) {
-  .feature_blocks {
-    max-width: 720px;
-  }
-}
-
 .top_line {
   display: flex;
   flex-flow: row;
@@ -351,8 +345,8 @@ html {
 }
 
 .feature_rectangle {
-  width: 298px;
-  height: 291px;
+  max-width: 298px;
+  max-height: 291px;
   background-color: #f5f0dd;
 }
 
@@ -374,8 +368,8 @@ html {
 }
 
 .team_text {
-  width: 457px;
-  height: 181px;
+  max-width: 457px;
+  max-height: 181px;
 }
 
 .team_title {
@@ -416,7 +410,7 @@ html {
 }
 
 .team_staff {
-  width: 1244px;
+  max-width: 1244px;
   position: relative;
 }
 
@@ -438,8 +432,8 @@ html {
 }
 
 .info {
-  width: 630px;
-  height: 45px;
+  max-width: 630px;
+  /* height: 45px; */
   opacity: 0.7;
   color: #000000;
   font-family: "Open Sans";
@@ -449,10 +443,8 @@ html {
 
 /* Feature menu styles */
 .contacts_menu {
-  text-align: left;
   margin-top: 44px;
   margin-bottom: 65px;
-  justify-content: space-between;
 }
 
 .contact_link {
@@ -495,7 +487,6 @@ html {
   background-color: #7a786e;
   color: white;
   visibility: hidden;
-  opacity: 0;
   transition: 0.5s linear;
 }
 
