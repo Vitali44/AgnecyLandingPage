@@ -1,5 +1,5 @@
 /* Monitors */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   html,
   body {
     overflow-x: hidden;
@@ -19,7 +19,12 @@
   .nav_link {
     height: 25%;
     padding: 2%;
-    font-size: 14px;
+    font-size: 1.5vh;
+  }
+
+  .nav_link:hover {
+    background: none;
+    color: white;
   }
 
   .organaisation {
@@ -35,12 +40,16 @@
   }
 
   .paragraph {
-    font-size: 1.5vh;
-    width: 90%;
+    font-size: 1.8vh;
   }
 
   .button_location {
     margin: 50px auto;
+  }
+
+  .button:hover {
+    color: white;
+    background: #ff2d2d;
   }
 
   .title_video {
@@ -89,11 +98,15 @@
   .service_paragraph {
     width: 100%;
     height: auto;
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
 
   .service_button_location {
     margin: 30px auto;
+  }
+
+  .service_button:hover {
+    background: white;
   }
 
   /* Features */
@@ -114,7 +127,7 @@
 
   .feature_paragraph {
     margin: 10px auto;
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
 
   .feature_text::after {
@@ -124,7 +137,7 @@
   /* Feature menu styles */
   .feature_menu {
     text-align: center;
-    margin: 50px auto;   
+    margin: 50px auto;
   }
 
   .feature_link {
@@ -141,52 +154,69 @@
     align-items: center;
     border: 1px solid rgb(5, 2, 1);
   }
-  
-  .top_line{
+
+  /*change color for nav_link */
+  .feature_link:hover {
+    color: black;
+  }
+
+  .top_line {
     flex-wrap: wrap;
     margin-bottom: 0;
   }
 
-  .bottom_line{
+  .bottom_line {
     flex-wrap: wrap;
   }
 
   .feature_rectangle {
-    max-width: 298px;
-    max-height: 291px;
-    margin: 20px;
+    max-width: 380px;
+    max-height: 330px;
+    margin: 30px;
     border: 1px solid rgb(216, 214, 214);
   }
 
   /* Team */
-  .team_container{
+  .team_container {
     padding: 3% 5%;
   }
 
-  .team_title{
+  .team_title {
     font-size: 4vh;
-  }
-  
-  .team_paragraph{
-    font-size: 1.5vh;
+    height: 100%;
   }
 
-  .main_photo{
+  .team_paragraph {
+    font-size: 1.8vh;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .team_text::after {
+    margin-bottom: 30px;
+  }
+
+  .main_photo {
     margin-top: 30px;
     margin-right: 30px;
   }
 
-  .calling_card{
+  .calling_card {
     padding-top: 0;
     width: 100%;
     height: 100%;
   }
 
-  .contacts_menu{
+  .contacts_menu {
     margin: 20px auto;
   }
 
-  .contacts_menu::after{
+  .contact_link:hover {
+    color: black;
+  }
+
+  .contacts_menu::after {
     content: "";
     display: flex;
     width: 132px;
@@ -199,13 +229,9 @@
     flex-wrap: wrap;
   }
 
-  .photo_name {
-    margin: 50px;
-  }
-  
-  .staff_name{
+  .staff_name {
     visibility: visible;
-    opacity: 0.9;
+    opacity: 0.7;
     width: 100%;
   }
 
@@ -221,7 +247,7 @@
     height: auto;
     margin-bottom: 0;
   }
- 
+
   .subscribe_title {
     height: auto;
     font-size: 4vh;
@@ -233,30 +259,332 @@
     height: 17px;
     color: #ffffff;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 1.8vh;
     font-weight: 400;
   }
-  
+
   .subscribe_form {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
   }
-  
+
   .your_email {
     width: 100%;
+    height: 50px;
   }
 
   .subscribe_button {
     margin: 40px auto;
   }
 
+  /* Feedback */
+  .feedback_container {
+    padding: 3% 5%;
+    display: block;
+  }
 
+  .feedback_text {
+    height: 100%;
+  }
+
+  .feedback_title {
+    font-size: 4vh;
+  }
+
+  .feedback_paragraph {
+    font-size: 1.8vh;
+  }
+
+  .feedback_message {
+    width: 100%;
+    height: 450px;
+    margin: 150px auto 70px;
+  }
+
+  .message_form {
+    display: block;
+  }
+
+  .your_name {
+    width: 60%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  .email {
+    width: 60%;
+    height: 50px;
+    margin-bottom: 0;
+    padding-left: 30px;
+  }
+
+  .message {
+    margin-top: 30px;
+    width: 80%;
+    padding: 30px;
+    height: 150px;
+  }
+
+  .message_button {
+    width: 300px;
+    height: 60px;
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: #ff2d2d;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .feedback_contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+  }
+
+  .cnt_title {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+
+  .cnt_address {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .cnt_email {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .cnt_phonenumber {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .footer {
+    font-size: 1.7vh;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .feature_rectangle {
+    max-width: 300px;
+    max-height: 290px;
+    margin: 20px auto;
+  }
+
+  .photo_name {
+    margin: 50px;
+  }
+
+  .feedback_message {
+    width: 100%;
+    height: 450px;
+    margin: 70px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paragraph {
+    font-size: 12px;
+  }
+
+  .button_location {
+    width: 220px;
+    height: 45px;
+    margin: 30px auto;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .service_paragraph {
+    font-size: 12px;
+  }
+
+  .service_button_location {
+    margin: 30px auto;
+    width: 220px;
+    height: 30px;
+  }
+
+  .service_button {
+    font-size: 16px;
+  }
+
+  .item {
+    float: left;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+  }
+
+  .item_title {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .item_paragraph {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .feature_menu {
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .feature_link {
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+    font-size: 15px;
+  }
+
+  .feature_rectangle {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px auto;
+  }
+
+  .feature_paragraph {
+    margin: 10px auto;
+    font-size: 12px;
+  }
+
+  .team_paragraph {
+    font-size: 12px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main_photo {
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+    margin: 40px auto 10px;
+  }
+
+  .name {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+  }
+
+  .info {
+    max-width: 630px;
+    /* height: 45px; */
+    opacity: 0.7;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .contacts_menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact_link {
+    border: 1px dotted rgb(136, 134, 134);
+    width: 70%;
+    padding: 10px;
+    margin: 5px auto;
+  }
+
+  .photo_name{
+    margin: 10px 50px;
+  }
+
+  .your_email {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .subscribe_button {
+    height: 50px;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .feedback_paragraph {
+    height: 100%;
+    font-size: 12px;
+  }
   
+  .feedback_message {
+    margin: 40px auto 70px;
+    height: 100%;
+  }
 
+  .your_name {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
 
+  .email {
+    width: 100%;
+    height: 40px;
+  }
 
+  .message {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px 0px 30px;
+    height: 100px;
+  }
 
+  .message_button {
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  .feedback_contact {
+    padding-left: 20px;
+  }
+
+  .cnt_title {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .cnt_address {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .cnt_email {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  .cnt_phonenumber {
+    font-size: 12px;
+    padding-top: 10px;
+  }
 
 
 

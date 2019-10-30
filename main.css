@@ -22,8 +22,6 @@ html {
 
 .container {
   background: #f6f2f2;
-  /* min-width: 10px; min or max */
-  min-height: 688px;
   padding: 30px 165px;
 }
 
@@ -48,6 +46,7 @@ html {
   /* remove underscore */
   text-transform: uppercase;
   transition: 0.2s linear;
+  
   /* time to change color */
 }
 
@@ -86,7 +85,7 @@ html {
 }
 
 .paragraph {
-  width: 512px;
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
@@ -267,6 +266,7 @@ html {
 }
 
 .feature_text {
+  height: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -281,7 +281,6 @@ html {
 }
 
 .feature_title {
-  height: 32px;
   font-size: 42px;
   margin-top: 46px;
   font-weight: 700;
@@ -290,8 +289,7 @@ html {
 }
 
 .feature_paragraph {
-  width: 504px;
-  height: 45px;
+  width: 100%;
   margin-top: 0px;
   font-size: 16px;
   font-weight: 400;
@@ -369,7 +367,7 @@ html {
 
 .team_text {
   max-width: 457px;
-  max-height: 181px;
+  height: auto;
 }
 
 .team_title {
@@ -449,7 +447,6 @@ html {
 
 .contact_link {
   width: 82px;
-  height: 15px;
   color: #000000;
   font-size: 18px;
   font-style: italic;
@@ -577,13 +574,12 @@ html {
 }
 
 .feedback_text {
-  width: 722px;
+  max-width: 722px;
   height: 213px;
 }
 
 .feedback_title {
   width: 341px;
-  height: 32px;
   opacity: 0.8;
   color: #000000;
   font-size: 42px;
@@ -672,8 +668,8 @@ html {
 }
 
 .feedback_contact {
-  max-width: 577px;
-  max-height: 481px;
+  width: 577px;
+  height: 481px;
   background-color: #2d2d2d;
   position: absolute;
   right: 0;
