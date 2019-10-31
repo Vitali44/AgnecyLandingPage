@@ -509,6 +509,7 @@
     margin: 5px auto;
   }
 
+
   .photo_name{
     margin: 10px 50px;
   }
@@ -584,6 +585,18 @@
   .cnt_phonenumber {
     font-size: 12px;
     padding-top: 10px;
+  }
+  
+  .footer {
+    display: block;
+    font-size: 10px;
+    padding: 10px 50px;
+  }
+  
+  .social_networks {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
   }
 
 
