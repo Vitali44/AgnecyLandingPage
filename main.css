@@ -743,3 +743,7 @@ html {
   height: 33px;
   justify-content: space-between;
 }
+
+.wow{
+  visibility: hidden;
+}
