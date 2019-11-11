@@ -46,7 +46,7 @@ html {
   /* remove underscore */
   text-transform: uppercase;
   transition: 0.2s linear;
-  
+
   /* time to change color */
 }
 
@@ -54,6 +54,7 @@ html {
 .nav_link:hover {
   background: #ff3f40;
   color: black;
+  cursor: pointer;
 }
 
 /*change color for nav_link */
@@ -127,10 +128,10 @@ html {
 }
 
 .title_video {
-  width: 100%; 
+  width: 100%;
 }
 
-.video{
+.video {
   width: 100%;
   box-shadow: 0 0 70px rgb(141, 141, 141);
 }
@@ -553,6 +554,7 @@ html {
   border-radius: 10px;
   margin-bottom: 100px;
   border: none;
+  cursor: pointer;
 }
 
 /* Feedback */
@@ -665,6 +667,7 @@ html {
   border-radius: 10px;
   margin-bottom: 100px;
   border: none;
+  cursor: pointer;
 }
 
 .feedback_contact {
@@ -744,6 +747,6 @@ html {
   justify-content: space-between;
 }
 
-.wow{
+.wow {
   visibility: hidden;
 }
