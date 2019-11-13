@@ -533,6 +533,15 @@ html {
   justify-content: center;
 }
 
+#form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  /* display: block; */
+  margin-bottom: 10px;
+  display: none;
+}
+
 .your_email {
   width: 521px;
   height: 79px;
