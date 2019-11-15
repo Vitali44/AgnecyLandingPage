@@ -300,27 +300,45 @@
 
         <div class="feedback_message wow slideInLeft" data-wow-delay=".6s">
           <div class="message_form">
-            <input
-              class="your_name"
-              type="text"
-              name="name"
-              placeholder="Name"
-            />
-            <input
-              class="email"
-              type="email"
-              name="email"
-              placeholder="Your Mail"
-            />
-            <textarea
-              class="message"
-              type="text"
-              name="story"
-              placeholder="Type your message"
-              rows="2"
-              cols="3"
-            ></textarea>
-            <input class="message_button" type="submit" value="Send message" />
+            <form
+              id="form_feedback"
+              method="post"
+              action="https://formspree.io/moqqnqpw"
+            >
+              <div class="fbName">
+                <input
+                  class="your_name"
+                  type="text"
+                  name="name"
+                  id="feedBackName"
+                  placeholder="Name"
+                />
+                <span id="name__error">Please enter your name </span>
+              </div>
+              <div class="fbEmail">
+                <input
+                  class="email"
+                  type="email"
+                  name="email"
+                  id="feedBackEmail"
+                  placeholder="Your Mail"
+                />
+                <span id="email__error">Please enter your e-mail </span>
+              </div>
+              <textarea
+                class="message"
+                type="text"
+                name="story"
+                placeholder="Type your message"
+                rows="2"
+                cols="3"
+              ></textarea>
+              <input
+                class="message_button"
+                type="submit"
+                value="Send message"
+              />
+            </form>
           </div>
         </div>
         <div class="feedback_contact wow slideInRight" data-wow-delay=".6s">
@@ -373,9 +391,11 @@
       $(document).ready(function() {
         console.log("inside on submit");
 
-        var validEmail = false;
+        var validSubEmail = false;
+        var validFeedbackName = false;
+        var validFeedbackEmail = false;
 
-        $("form").submit(function(event) {
+        $("#form_subscribe").submit(function(event) {
           event.preventDefault();
           console.log("inside on submit");
 
@@ -390,15 +410,15 @@
 
           if (pattern.test(email)) {
             $("#form__error").css({ visibility: "hidden" });
-            validEmail = true;
-            console.log("true")
+            validSubEmail = true;
+            console.log("true");
           } else {
             $("#form__error").css({ visibility: "visible" });
-            validEmail = false;
-            console.log("false")
+            validSubEmail = false;
+            console.log("false");
           }
 
-          if (validEmail == true) {
+          if (validSubEmail === true) {
             $("form")
               .unbind("submit")
               .submit();
@@ -406,27 +426,41 @@
         });
       });
 
-      // function InvalidMsg(t) {
-      //   if (t.value === "") {
-      //     t.setCustomValidity("Entering an email address is necessary!");
-      //   } else if (t.validity.typeMismatch) {
-      //     t.setCustomValidity("Please enter a valid email address");
-      //   } else {
-      //     t.setCustomValidity("");
-      //   }
+      $("#form_feedback").submit(function(event) {
+        event.preventDefault();
 
-      //   return true;
-      // }
+        var name = $("#feedBackName").val();
+        var patternName = /^[a-z ,.'-]+$/i;
 
-      // function InvalidMsg() {
-      //   var re = /^\S+@\S+\.\S+$/;
-      //   var email = document.ge
-      //   if (your_email.value.match(re)) {
-      //     document.getElementById("form_error").style.display = "none";
-      //   } else {
-      //     document.getElementById("form_error").style.display = "block";
-      //   }
-      // }
+        var email = $("#feedBackEmail").val();
+        var patternEmail = /\S+@+\S+\.\S+/;
+
+        if (patternName.test(name)) {
+          $("#name__error").css({ visibility: "hidden" });
+          validFeedbackName = true;
+          console.log("true");
+        } else {
+          $("#name__error").css({ visibility: "visible" });
+          validFeedbackName = false;
+          console.log("false");
+        }
+
+        if (patternEmail.test(email)) {
+          $("#email__error").css({ visibility: "hidden" });
+          validFeedbackEmail = true;
+          console.log("true");
+        } else {
+          $("#email__error").css({ visibility: "visible" });
+          validFeedbackEmail = false;
+          console.log("false");
+        }
+
+        if (validFeedbackName === true && validFeedbackEmail === true) {
+          $("form")
+            .unbind("submit")
+            .submit();
+        }
+      });
     </script>
   </body>
 </html>
