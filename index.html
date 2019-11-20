@@ -198,13 +198,7 @@
             </div>
             <div class="other_employees">
               <div class="photo_name">
-                <img
-                  class="other_persons"
-                  src="image\Beavis.jpg"
-                  width="197"
-                  height="214"
-                  alt="Photo"
-                />
+                <img class="other_persons" src="image\Beavis.jpg" alt="Photo" />
                 <div class="staff_name">sokina jue</div>
               </div>
               <div class="photo_name">
@@ -261,19 +255,23 @@
           id="form_subscribe"
           method="post"
           action="https://formspree.io/moqqnqpw"
+          novalidate
         >
-          <span id="form__error"
-            >Please enter your email address in the format
-            example@site.com</span
-          >
-          <input
-            class="your_email wow slideInLeft"
-            data-wow-delay=".8s"
-            type="email"
-            id="subEmail"
-            name="email"
-            placeholder="Email Address..."
-          />
+          <div class="subsEmail">
+            <input
+              class="your_email wow slideInLeft"
+              data-wow-delay=".8s"
+              type="email"
+              id="subEmail"
+              name="email"
+              placeholder="Email Address..."
+            />
+            <span id="form__error"
+              >Please enter your email address in the format
+              example@site.com</span
+            >
+          </div>
+
           <input
             class="subscribe_button wow slideInRight"
             data-wow-delay=".8s"
@@ -304,6 +302,7 @@
               id="form_feedback"
               method="post"
               action="https://formspree.io/moqqnqpw"
+              novalidate
             >
               <div class="fbName">
                 <input
@@ -387,7 +386,100 @@
     <script>
       new WOW().init();
     </script>
+
     <script>
+      $(document).ready(function() {
+        var validSubEmail = false;
+        var validFeedbackName = false;
+        var validFeedbackEmail = false;
+        var pattern = /\S+@+\S+\.\S+/;
+
+        //Проверка формы подписки
+        $("#form_subscribe").on("input", function() {
+          var email = $("#subEmail").val();
+
+          if (pattern.test(email)) {
+            $("#form__error").css({ visibility: "hidden" });
+          } else {
+            $("#form__error").css({ visibility: "visible" });
+          }
+        });
+
+        $("#form_subscribe").submit(function(event) {
+          event.preventDefault();
+          var email = $("#subEmail").val();
+
+          if (pattern.test(email)) {
+            $("#form__error").css({ visibility: "hidden" });
+            validSubEmail = true;
+          } else {
+            $("#form__error").css({ visibility: "visible" });
+            validSubEmail = false;
+          }
+
+          if (validSubEmail) {
+            $("form")
+              .unbind("submit")
+              .submit();
+          }
+        });
+      });
+
+      //Проверка формы для обратной связи
+      $("#form_feedback").on("input", function() {
+        var name = $("#feedBackName").val();
+        var patternName = /^[a-z ,.'-]+$/i;
+
+        var email = $("#feedBackEmail").val();
+        var patternEmail = /\S+@+\S+\.\S+/;
+
+        if (patternName.test(name)) {
+          $("#name__error").css({ visibility: "hidden" });
+        } else {
+          $("#name__error").css({ visibility: "visible" });
+        }
+
+        if (patternEmail.test(email)) {
+          $("#email__error").css({ visibility: "hidden" });
+        } else {
+          $("#email__error").css({ visibility: "visible" });
+        }
+      });
+
+      $("#form_feedback").submit(function(event) {
+        event.preventDefault();
+
+        var name = $("#feedBackName").val();
+        var patternName = /^[a-z ,.'-]+$/i;
+
+        var email = $("#feedBackEmail").val();
+        var patternEmail = /\S+@+\S+\.\S+/;
+
+        if (patternName.test(name)) {
+          $("#name__error").css({ visibility: "hidden" });
+          validFeedbackName = true;
+        } else {
+          $("#name__error").css({ visibility: "visible" });
+          validFeedbackName = false;
+        }
+
+        if (patternEmail.test(email)) {
+          $("#email__error").css({ visibility: "hidden" });
+          validFeedbackEmail = true;
+        } else {
+          $("#email__error").css({ visibility: "visible" });
+          validFeedbackEmail = false;
+        }
+
+        if (validFeedbackName && validFeedbackEmail) {
+          $("form")
+            .unbind("submit")
+            .submit();
+        }
+      });
+    </script>
+
+    <!-- <script>
       $(document).ready(function() {
         console.log("inside on submit");
 
@@ -418,7 +510,7 @@
             console.log("false");
           }
 
-          if (validSubEmail === true) {
+          if (validSubEmail) {
             $("form")
               .unbind("submit")
               .submit();
@@ -455,12 +547,12 @@
           console.log("false");
         }
 
-        if (validFeedbackName === true && validFeedbackEmail === true) {
+        if (validFeedbackName && validFeedbackEmail) {
           $("form")
             .unbind("submit")
             .submit();
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>

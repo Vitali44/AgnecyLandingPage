@@ -36,7 +36,6 @@ html {
 }
 
 .nav_link {
-  /* width: 70em; */
   height: 90px;
   display: flex;
   align-items: center;
@@ -46,9 +45,10 @@ html {
   /* remove underscore */
   text-transform: uppercase;
   transition: 0.2s linear;
+  white-space: nowrap;
 
   /* time to change color */
-}
+}ё
 
 /*change color for nav_link */
 .nav_link:hover {
@@ -465,6 +465,11 @@ html {
   justify-content: space-between;
 }
 
+.other_persons{
+  max-width: 197px;
+  max-height: 214px;
+}
+
 .photo_name {
   position: relative;
   max-height: 214px;
@@ -541,8 +546,15 @@ html {
   visibility: hidden;
 }
 
-.your_email {
+.subsEmail{
   width: 521px;
+  /* height: 79px; */
+  float: left;
+  margin-right: 40px;
+}
+
+.your_email {
+  width: 500px;
   height: 79px;
   font-size: 16px;
   padding: 30px;

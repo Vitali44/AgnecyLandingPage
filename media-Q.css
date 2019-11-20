@@ -1,5 +1,6 @@
 /* Monitors */
 @media screen and (max-width: 1024px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -229,6 +230,7 @@
     flex-wrap: wrap;
   }
 
+
   .staff_name {
     visibility: visible;
     opacity: 0.7;
@@ -271,11 +273,12 @@
 
   .your_email {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
+    margin-bottom: 20px;
   }
 
   .subscribe_button {
-    margin: 40px auto;
+    margin: auto;
   }
 
   /* Feedback */
@@ -306,14 +309,27 @@
     display: block;
   }
 
+  .fbName {
+    width: 100%;
+    height: 80px;
+    float: left;
+    margin-right: 0;
+  }
+
+  .fbEmail {
+    width: 100%;
+    height: 80px;
+    float: left;
+  }
+
   .your_name {
-    width: 60%;
+    width: 100%;
     height: 50px;
     padding-left: 30px;
   }
 
   .email {
-    width: 60%;
+    width: 100%;
     height: 50px;
     margin-bottom: 0;
     padding-left: 30px;
@@ -321,7 +337,7 @@
 
   .message {
     margin-top: 30px;
-    width: 80%;
+    width: 100%;
     padding: 30px;
     height: 150px;
   }
@@ -384,6 +400,28 @@
     margin: 50px;
   }
 
+  .subsEmail {
+    width: 100%;
+  }
+
+  .your_email {
+    width: 100%;
+  }
+
+
+  .fbEmail {
+    width: 100%;
+    height: 80px;
+    float: left;
+  }
+
+  .fbName {
+    width: 100%;
+    height: 80px;
+    float: left;
+    margin-right: 0;
+  }
+
   .feedback_message {
     width: 100%;
     height: 450px;
@@ -391,7 +429,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .paragraph {
     font-size: 12px;
   }
@@ -508,14 +546,24 @@
     margin: 5px auto;
   }
 
+  .photo_name {
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: center;
+  }
 
-  .photo_name{
-    margin: 10px 50px;
+  .other_employees {
+    flex-flow: column;
+  }
+
+  .other_persons {
+    max-width: 450px;
   }
 
   .your_email {
-    width: 100%;
-    padding: 20px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
   }
 
   .subscribe_button {
@@ -524,20 +572,39 @@
     font-size: 16px;
   }
 
+  .subsEmail {
+    width: 100%;
+    height: 79px;
+    float: left;
+  }
+
   .feedback_paragraph {
     height: 100%;
     font-size: 12px;
   }
-  
+
   .feedback_message {
     margin: 40px auto 70px;
     height: 100%;
+  }
+
+  .fbName {
+    width: 100%;
+    height: 80px;
+    float: left;
+    margin-right: 0;
   }
 
   .your_name {
     width: 100%;
     height: 40px;
     padding-left: 30px;
+  }
+
+  .fbEmail {
+    width: 100%;
+    height: 80px;
+    float: left;
   }
 
   .email {
@@ -584,13 +651,13 @@
     font-size: 12px;
     padding-top: 10px;
   }
-  
+
   .footer {
     display: block;
     font-size: 10px;
     padding: 10px 50px;
   }
-  
+
   .social_networks {
     width: 100%;
     justify-content: space-around;
