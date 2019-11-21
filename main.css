@@ -48,7 +48,9 @@ html {
   white-space: nowrap;
 
   /* time to change color */
-}ё
+}
+
+ё
 
 /*change color for nav_link */
 .nav_link:hover {
@@ -465,7 +467,7 @@ html {
   justify-content: space-between;
 }
 
-.other_persons{
+.other_persons {
   max-width: 197px;
   max-height: 214px;
 }
@@ -542,11 +544,11 @@ html {
   text-align: left;
   font-size: 12px;
   /* display: block; */
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   visibility: hidden;
 }
 
-.subsEmail{
+.subsEmail {
   width: 521px;
   /* height: 79px; */
   float: left;
@@ -703,6 +705,14 @@ html {
   padding: 51px;
 }
 
+#message__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
 .message_button {
   width: 731px;
   height: 72px;
@@ -729,6 +739,7 @@ html {
   justify-content: center;
   flex-direction: column;
   padding-left: 79px;
+  margin-top: 20px;
 }
 
 .cnt_title {
